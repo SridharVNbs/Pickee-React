@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "bootstrap/scss/bootstrap";
+
+* {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.title {
+    color: $blue-500;
+}
+
+.cart-icon {
+    color: $blue-500;
+}
+
+.nav-links {
+    color: $gray-700;
+}
+
+.carousel-caption {
+    text-align: start !important;
+    color: #fff !important;
+    left: 10% !important;
+    top: 40%;
+
+    h1 {
+        font-size: 3rem;
+        text-shadow: 1px 1px 10px rgba($color: #000000, $alpha: 0.5); // Black shadow kept as is
+    }
+
+    p {
+        font-size: 2rem;
+    }
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #ced4da !important;
+}
+
+.form-control {
+    border: none !important;
+}
+
+.text-muted {
+    margin-right: 2rem;
+}
+
+.border {
+    border-color: $gray-400 !important;
+}
+
+.nav-h {
+    border-bottom: 1px solid rgba($color: $gray-400, $alpha: 0.5);
+}
+
+.card {
+    border: none !important;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.inner-card {
+    width: 90% !important;
+    height: 90% !important;
+    margin: auto;
+    border: none;
+}
+
+.card-container {
+    border: none;
+
+    img {
+        margin-right: 200px;
+        margin-top: 10px;
+        width: 3rem;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .card-info {
+        margin-top: 20px;
+
+        a {
+            color: var(--bs-secondary) !important; // Changed black to text-secondary
+        }
+    }
+}
+
+.products {
+    height: 22rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.products:hover {
+    transform: translateY(-5px);
+}
+
+.img-con img {
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.info-con h5 {
+    font-size: 18px;
+    margin: auto;
+    letter-spacing: 2px;
+    color: var(--bs-secondary) !important; // Changed black to text-secondary
+}
+
+.info-con span {
+    position: relative;
+    top: 10px;
+    color: var(--bs-secondary) !important; // Changed black to text-secondary
+}
+
+.cart {
+    max-width: 30px;
+}
+
+.rate-img {
+    width: 30px;
+}
+
+.star {
+    position: relative;
+
+    div {
+        position: relative;
+        top: 10px !important;
+        color: var(--bs-secondary) !important; // Changed black to text-secondary
+    }
+}
+
+.banner {
+    height: 20rem;
+    position: relative;
+
+    img {
+        z-index: -1;
+        object-fit: cover !important;
+        width: 60rem;
+    }
+
+    .banner-info {
+        position: absolute !important;
+        z-index: 5;
+        float: left;
+    }
+}
+
+.support-img {
+    width: 4rem;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: transparent;
+    transition: background 0.3s ease;
+}
+
+/* Navbar links */
+.nav-links {
+    color: #555;
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+/* Hover Effect */
+.nav-links:hover {
+    color: #007bff;
+    transform: translateY(-2px);
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 999;
+    padding: 10px 0;
+    transition: opacity 0.3s;
+    top: 100%;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Dropdown item */
+.dropdown-item {
+    display: block;
+    padding: 8px 15px;
+    color: #555;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Active dropdown */
+.dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+}
