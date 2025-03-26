@@ -1,9 +1,6 @@
 import React from "react";
 import images from "./ImageProvider";
 import Support from "./Support";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import Navbar2 from "./Navbar2";
 
 const AboutUs = () => {
   return (

@@ -4,8 +4,8 @@ import { useCart } from "./CartContext";
 const Cart = () => {
   const { cart, increaseQuantity, decreaseQuantity } = useCart();
 
-  // Calculate total, discount, and final price
   const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
     <div className="container my-5">
@@ -19,7 +19,12 @@ const Cart = () => {
             {cart.map((item, index) => (
               <div key={index} className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                 <div className="card shadow-sm">
-                  <img src={item.imgUrl} alt={item.name} className="card-img-top" />
+                  <img
+                    src={item.imgUrl}
+                    alt={item.name}
+                    className="card-img-top"
+                    style={{ height: "200px", objectFit: "cover" }}
+                  />
                   <div className="card-body text-center">
                     <h5 className="card-title">{item.name}</h5>
                     <p className="card-text fw-bold">₹{item.price}</p>
@@ -47,10 +52,21 @@ const Cart = () => {
             ))}
           </div>
 
-          {/* Price Calculation Section */}
-          <div className="mt-5 p-4 text-center bg-light rounded shadow">
-            <h4>Order Summary</h4>
-            <p className="fw-bold">Total Price: ₹{totalPrice.toFixed(2)}</p>
+          {/* Order Summary Section */}
+          <div className="mt-5 p-4 bg-light rounded shadow">
+            <h4 className="text-center">Order Summary</h4>
+            
+            <ul className="list-group mb-3">
+              {cart.map((item) => (
+                <li key={item.id} className="list-group-item d-flex justify-content-between align-items-center">
+                  {item.name} <span className="fw-bold">₹ {item.price} x {item.quantity}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="text-center">
+              <p className="fw-bold">Total Price: ₹{totalPrice.toFixed(2)}</p>
+            </div>
           </div>
         </>
       )}

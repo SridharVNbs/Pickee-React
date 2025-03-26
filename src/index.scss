@@ -187,13 +187,11 @@ body {
     width: 4rem;
 }
 
-/* Navbar Styling */
 .navbar {
     background: transparent;
     transition: background 0.3s ease;
 }
 
-/* Navbar links */
 .nav-links {
     color: #555;
     transition: color 0.3s, transform 0.3s;
@@ -202,13 +200,11 @@ body {
     display: inline-block;
 }
 
-/* Hover Effect */
 .nav-links:hover {
     color: #007bff;
     transform: translateY(-2px);
 }
 
-/* Dropdown Menu Styling */
 .dropdown-menu {
     background: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -223,7 +219,6 @@ body {
     visibility: visible;
 }
 
-/* Dropdown item */
 .dropdown-item {
     display: block;
     padding: 8px 15px;
@@ -236,7 +231,6 @@ body {
     color: #fff;
 }
 
-/* Active dropdown */
 .dropdown-menu.active {
     opacity: 1;
     visibility: visible;

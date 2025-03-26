@@ -41,7 +41,6 @@ const Navbar = () => {
             ].map((item, index) => (
               <li key={index} className="nav-item dropdown">
                 
-                {/* Link directly to "/" for Home */}
                 {item.name === "Home" ? (
                   <Link to={item.path} className="nav-link">
                     {item.name}
