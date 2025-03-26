@@ -101,7 +101,7 @@ const Cart = () => {
               <Modal.Title>Order Confirmation</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <p className="text-success text-center fw-bold">✅ Order placed successfully!</p>
+              <p className="text-success text-center fw-bold">Order placed successfully!</p>
             </Modal.Body>
             <Modal.Footer>
               <Button variant="secondary" onClick={() => setShowModal(false)}>
