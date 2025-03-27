@@ -8,6 +8,13 @@ import Carrot from "../assets/Products-img/carrots.png";
 import Orange from "../assets/Products-img/orange.png";
 import Spinach from "../assets/Products-img/spinach.png";
 import Sunglasses from "../assets/Products-img/Sunglasses.jpg";
+import Handbag from "../assets/Products-img/Handbag.jpg";
+import Mackupkid from "../assets/Products-img/Mackupkid.jpg";
+import Shoes from "../assets/Products-img/Shoes.jpg";
+import Shirts from "../assets/Products-img/Shirts.jpg";
+import Pomogranate from "../assets/Products-img/Pomogranate.jpg";
+import Lemon from "../assets/Products-img/Lemon.jpg";
+import BuleBerry from "../assets/Products-img/BuleBerry.jpg";
 import Tomato from "../assets/Products-img/tomatoes.png";
 import Wallet from "../assets/Products-img/wallet.jpg";
 import Apple from "../assets/Products-img/apple.png";
@@ -37,8 +44,17 @@ const images = {
   Cap,
   Carrot,
   Orange,
+  BuleBerry,
+  Pomogranate,
+  Lemon,
   Spinach,
   Sunglasses,
+
+  Handbag,
+  Mackupkid,
+  Shoes,
+  Shirts,
+
   Tomato,
   Wallet,
   Apple,

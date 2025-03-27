@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className="container-fluid container-md d-flex justify-content-between align-items-center my-3 navbar px-3">
       
       <h1 className="fs-2 title">
-        <Link to="/" className="text-decoration-none text-dark">Grosy</Link>
+        <Link to="/" className="text-decoration-none text-dark">Pick<span style={{color:"darkgreen"}}>e</span><span style={{color:"lightgreen"}}>e</span></Link>
       </h1>
 
       <nav className="navbar navbar-expand-md">
@@ -34,10 +34,10 @@ const Navbar = () => {
 
             {[
               { name: "Home", path: "/" },
-              { name: "Shop", links: ["/men", "/women", "/kids"] },
-              { name: "Categories", links: ["/electronics", "/fashion", "/grocery"] },
+              { name: "Shop", links: ["/Fresh Fruit", "/Veggies", "/Dry Fruit"] },
+              { name: "Categories", links: ["/Food", "/fashion", "/grocery"] },
               { name: "Deals & Offers", links: ["/flash-sales", "/combo-deals", "/discounts"] },
-              { name: "Pages", links: ["/AboutUs", "/contact", "/faq"] }
+              { name: "Pages", links: ["/AboutUs", "/contact"] }
             ].map((item, index) => (
               <li key={index} className="nav-item dropdown">
                 

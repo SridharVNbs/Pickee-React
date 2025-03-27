@@ -5,13 +5,14 @@ import Shopnote from "./Shopnote";
 import Product from "./Product";
 import Banner from "./Banner";
 import Support from "./Support";
+import Product2 from "./Product2";
 
 const Home = () => {
   const note1 = {
     n1: "Shop",
-    n2: "Smart",
-    n3: "Save",
-    n4: "Big",
+    n2: "Fresh",
+    n3: "Fruits",
+    n4: "And Veggies",
     des: "Elevate Your Lifestyle with Premium Products at Unmatched Prices!",
   };
   const note2 = {
@@ -29,7 +30,7 @@ const Home = () => {
       <Shopnote {...note1} />
       <Product />
       <Shopnote {...note2} />
-      <Product />
+      <Product2 />
       <Banner />
       <Support />
     </div>

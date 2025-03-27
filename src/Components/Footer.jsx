@@ -70,8 +70,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/category/greens" className="text-decoration-none text-secondary">
-                  Greens
+                <a href="/category/accories" className="text-decoration-none text-secondary">
+                Accessories 
                 </a>
               </li>
             </ul>
@@ -80,7 +80,7 @@ const Footer = () => {
           <div className="col-12 col-md-4">
             <h5 className="fw-bold">Contact Us</h5>
             <p className="mb-1">
-              <strong>Email:</strong> example@grosy.com
+              <strong>Email:</strong> example@pickee.com
             </p>
             <p className="mb-1">
               <strong>Phone:</strong> +91 123-456-7890
