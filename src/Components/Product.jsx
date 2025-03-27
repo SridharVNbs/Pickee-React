@@ -100,7 +100,7 @@ const Product = () => {
   ];
 
   return (
-    <div className="container-fluid overflow-hidden my-5">
+    <div className="container-fluid overflow-hidden my-3">
       <div className="row g-4 justify-content-center">
         {products.map((product) => (
           <div
